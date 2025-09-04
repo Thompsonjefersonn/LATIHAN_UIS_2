@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_white"
+    android:padding="8dp">
+
+    <!-- Foto -->
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Badge -20% -->
+    <TextView
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_badge_red"
+        android:text="-20%"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingHorizontal="6dp"
+        app:layout_constraintTop_toTopOf="@id/img"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        android:layout_margin="8dp"/>
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet consectetur"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Harga sekarang -->
+    <TextView
+        android:id="@+id/priceNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="$16,00"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Harga lama (statis, dicoret pakai garis overlay) -->
+    <TextView
+        android:id="@+id/priceOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="$20,00"
+        android:textColor="#B05C5C"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/priceNow"
+        app:layout_constraintBaseline_toBaselineOf="@id/priceNow"/>
+
+    <!-- Garis coret untuk priceOld (karena murni XML statis) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B05C5C"
+        app:layout_constraintStart_toStartOf="@id/priceOld"
+        app:layout_constraintEnd_toEndOf="@id/priceOld"
+        app:layout_constraintTop_toTopOf="@id/priceOld"
+        android:translationY="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,761 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-32dp"
+        android:layout_marginTop="-950dp"
+        android:layout_marginEnd="-300dp"
+        android:src="@drawable/bg_blue_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/cell"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/outline_android_cell_4_bar_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/battery"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/outline_battery_android_frame_full_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@id/cell"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/outline_wifi_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toEndOf="@id/cell"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFlashSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Flash Sale"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvChooseDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Choose Your Discount"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFlashSale" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/outline_timer_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_timer_box"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="289dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_timer_box"
+        android:gravity="center"
+        android:text="36"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_timer_box"
+        android:gravity="center"
+        android:text="58"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- PILL ABU-ABU (background) -->
+
+
+    <!-- All -->
+
+    <View
+        android:id="@+id/discountBg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_discount_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChooseDiscount" />
+
+    <TextView
+        android:id="@+id/btnAll"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_discount_normal"
+        android:gravity="center"
+        android:text="All"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/discountBg"
+        app:layout_constraintTop_toTopOf="@id/discountBg"
+        app:layout_constraintBottom_toBottomOf="@id/discountBg" />
+
+    <!-- 10% -->
+    <TextView
+        android:id="@+id/btn10"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_discount_normal"
+        android:gravity="center"
+        android:text="10%"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnAll"
+        app:layout_constraintTop_toTopOf="@id/discountBg"
+        app:layout_constraintBottom_toBottomOf="@id/discountBg" />
+
+    <!-- 20% (selected: putih + outline biru) -->
+    <TextView
+        android:id="@+id/btn20"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_discount_selected"
+        android:gravity="center"
+        android:text="20%"
+        android:textAllCaps="false"
+        android:textColor="#1663FF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btn10"
+        app:layout_constraintTop_toTopOf="@id/discountBg"
+        app:layout_constraintBottom_toBottomOf="@id/discountBg" />
+
+    <!-- 30% -->
+    <TextView
+        android:id="@+id/btn30"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_discount_normal"
+        android:gravity="center"
+        android:text="30%"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btn20"
+        app:layout_constraintTop_toTopOf="@id/discountBg"
+        app:layout_constraintBottom_toBottomOf="@id/discountBg" />
+
+    <!-- 40% -->
+    <TextView
+        android:id="@+id/btn40"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_discount_normal"
+        android:gravity="center"
+        android:text="40%"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btn30"
+        app:layout_constraintTop_toTopOf="@id/discountBg"
+        app:layout_constraintBottom_toBottomOf="@id/discountBg" />
+
+    <!-- 50% (akhir: anchor ke End) -->
+    <TextView
+        android:id="@+id/btn50"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_discount_normal"
+        android:gravity="center"
+        android:text="50%"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btn40"
+        app:layout_constraintTop_toTopOf="@id/discountBg"
+        app:layout_constraintBottom_toBottomOf="@id/discountBg"
+        app:layout_constraintEnd_toEndOf="@id/discountBg" />
+
+
+    <TextView
+        android:id="@+id/tvDiscountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="20% Discount"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <ImageView
+        android:id="@+id/icFilter"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/baseline_tune_24"
+        app:layout_constraintBottom_toBottomOf="@id/tvDiscountTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDiscountTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardProduct1"
+        android:layout_width="200dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_outer_white_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscountTitle">
+
+
+
+        <ImageView
+            android:id="@+id/product1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_inner_round"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/badge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_badge_red"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="-20%"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/product1"
+            app:layout_constraintTop_toTopOf="@id/product1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProduct1" />
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="amet consectetur"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1" />
+
+    <TextView
+        android:id="@+id/priceNow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="$16,00"
+        android:textColor="#111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1" />
+
+
+    <TextView
+        android:id="@+id/priceOld1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="$20,00"
+        android:textColor="#80FF0000"
+        android:textSize="14sp"
+        android:paintFlags="strike_thru_text|anti_alias"
+        app:layout_constraintStart_toEndOf="@id/priceNow1"
+        app:layout_constraintBaseline_toBaselineOf="@id/priceNow1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardProduct2"
+        android:layout_width="200dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_outer_white_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscountTitle">
+
+        <!-- Gambar di dalam -->
+
+        <ImageView
+            android:id="@+id/product2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_inner_round"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/badge2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_badge_red"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="-20%"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/product2"
+            app:layout_constraintTop_toTopOf="@id/product2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProduct2" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:text="amet consectetur"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title3" />
+
+    <TextView
+        android:id="@+id/priceNow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="24dp"
+        android:text="$16,00"
+        android:textColor="#111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title3" />
+
+    <TextView
+        android:id="@+id/priceOld2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paintFlags="strike_thru_text|anti_alias"
+        android:text="$20,00"
+        android:textColor="#80FF0000"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/priceNow2"
+        app:layout_constraintStart_toEndOf="@id/priceNow2" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardProduct3"
+        android:layout_width="200dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/bg_outer_white_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscountTitle">
+
+        <!-- Gambar di dalam -->
+
+        <ImageView
+            android:id="@+id/product3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_inner_round"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/badge3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_badge_red"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="-20%"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/product3"
+            app:layout_constraintTop_toTopOf="@id/product3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProduct3" />
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="amet consectetur"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title5" />
+
+    <TextView
+        android:id="@+id/priceNow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="$16,00"
+        android:textColor="#111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title5" />
+
+    <TextView
+        android:id="@+id/priceOld3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paintFlags="strike_thru_text|anti_alias"
+        android:text="$20,00"
+        android:textColor="#80FF0000"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/priceNow3"
+        app:layout_constraintStart_toEndOf="@id/priceNow3" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardProduct4"
+        android:layout_width="200dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/bg_outer_white_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscountTitle">
+
+        <!-- Gambar di dalam -->
+
+        <ImageView
+            android:id="@+id/product4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_inner_round"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/badge4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_badge_red"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="-20%"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/product4"
+            app:layout_constraintTop_toTopOf="@id/product4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/title7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="4dp"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProduct4" />
+
+    <TextView
+        android:id="@+id/title8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:text="amet consectetur"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title7" />
+
+    <TextView
+        android:id="@+id/priceNow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        android:text="$16,00"
+        android:textColor="#111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title7" />
+
+    <TextView
+        android:id="@+id/priceOld4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paintFlags="strike_thru_text|anti_alias"
+        android:text="$20,00"
+        android:textColor="#80FF0000"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/priceNow4"
+        app:layout_constraintStart_toEndOf="@id/priceNow4" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountBg"
+        app:layout_constraintVertical_bias="0.967">
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/outline_home_24"
+            android:orientation="vertical"
+            android:contentDescription="Home" />
+
+
+
+        <ImageView
+            android:id="@+id/nav_favorites"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/outline_heart_plus_24"
+            android:contentDescription="Favorites" />
+
+        <ImageView
+            android:id="@+id/nav_orders"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/outline_list_alt_24"
+            android:contentDescription="Orders" />
+
+        <ImageView
+            android:id="@+id/nav_cart"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/outline_shopping_bag_24"
+            android:contentDescription="Cart" />
+
+        <ImageView
+            android:id="@+id/nav_profile"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/outline_person_24"
+            android:contentDescription="Profile" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_indicator"
+        android:layout_width="144dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
